@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.people_content_box1{
+   /* background-color: purple; */
+    width: 100%;
+    height: 600px; 
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.people_content_11{
+    /* background-color: blue; */
+    width: 520px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 5%;
+}
