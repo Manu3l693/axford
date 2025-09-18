@@ -22,14 +22,14 @@ function Department(){
 
     return(
         <div>
-            <nav className="navbar">
+            <nav className="navbar1">
                 <div className="logo">
                     <div className='dot-logo'></div>
-                    <Link className='logo-name' to={"/"}>Axford & Co.</Link>
+                    <Link className='logo-name1' to={"/"}>Axford & Co.</Link>
                     <button className='navbutton hidden' onClick={handleClick}><i className={click ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i></button>
                 </div>
 
-                <ul className='nav-links'>
+                <ul className='nav-links1'>
                     {pages.map((page, index)=> <li key={index} style={{borderBottom: page.color}}><Link className='page-link' to={page.path}>{page.name}</Link></li>)}
                 </ul>
             </nav>
