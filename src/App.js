@@ -2,7 +2,7 @@ import React from "react";
 import './pages/Home.css';
 import './pages/Explore.css'
 import{BrowserRouter, Routes, Route} from 'react-router-dom';
-import ProtectedRoute from "./protectedRoute";
+// import ProtectedRoute from "./protectedRoute";
 import LandingPage from "./pages/Home";
 import ExplorePage from "./pages/Explore";
 import Department from "./pages/Department";

@@ -21,9 +21,9 @@ export default function ExplorePage(){
     const[fontSize, setFontSize] = useState('0px')
     const[play, setPlay] = useState(false);
 
-
+    
     const pages = [
-        {name: 'Explore', path:"/Explore"},
+        {name: 'Explore', path:"/Explore", color: '2px solid red'},
         {name: 'Departments', path:"/Department"},
         {name: 'Dashboard', path:"/"},
         {name: 'Log out', path:"/logout"},
@@ -94,7 +94,7 @@ export default function ExplorePage(){
                 </div>
 
                 <ul className='nav-links'>
-                    {pages.map((page, index)=> <li key={index}><Link className='page-link' to={page.path}>{page.name}</Link></li>)}
+                    {pages.map((page, index)=> <li key={index} style={{borderBottom: page.color}}><Link className='page-link' to={page.path}>{page.name}</Link></li>)}
                 </ul>
             </nav>
 
