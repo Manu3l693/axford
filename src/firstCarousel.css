@@ -10,7 +10,7 @@
 .department{
     /* background-color: blue; */
     width: 100%;
-    height: 600px;
+    height: 585px;
     display: flex;
     flex-direction: column;
 }
