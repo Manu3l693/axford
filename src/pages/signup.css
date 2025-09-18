@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.signup-background{
+    /* background-color: red; */
+    background-image: url('../img/93b6c4632b06da232be6209cc3bdc08b73c46046.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.signup-background-1{
+    background-color: rgba(0,0,0,.2);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100vh;
+}
+.axford-signup-logo{
+    background-color: rgba(255,255,255, 0.7);
+    width: 100%;
+    height: 50px;
+    box-shadow: 10px 10px 10px rgba(255,255,255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5%;
+}
+.axford-signup-logo .logo{
+    background-color: #FF5F1F;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 0.5%;
+}
+.axford-signup-logo > h2{
+    color: black;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.sign-up-border{
+    /* background-color: yellow; */
+    width: 450px;
+    height: 500px;
+    margin: 0 auto;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup-page{
+    background-color: #fff;
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0,0,0,.7);
+}
+.sign-up-header{
+    /* background-color: red; */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-up-header > h2{
+    color: #1D1D1C;
+    font-size: 21px;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+.signup-form{
+    /* background-color: yellow; */
+    width: 100%;
+    flex: 1;
+}
+.form-input{
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+}
+.form-group{
+    /* background-color: blue; */
+    width: 100%;
+    height: 70px;
+    margin: 3% 0;
+    position: relative;
+}
+.form-group > label{
+    color: #353636;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 500;
+    position: absolute;
+    left: 6%;
+}
+.form_input{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-group input{
+    border: 1px solid #B3B3B3;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    padding-left: 1%;
+}
+input::placeholder{
+    color: #B3B3B3;
+    font-size: 13px;
+    font-family: Lato;
+    font-weight: 500;
+}
+.signup-button{
+    /* background-color: red; */
+    width: 350px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.signup-button > button{
+    background-color: #353636;
+    width: 350px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: Lato;
+    font-weight: 500;
+    transition: all 0.6s;
+}
+.signup-button > button:hover{
+    background-color: #404141;
+}
+.divider-or{
+    /* background-color: purple; */
+    width: 100%;
+    height: 20px;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    margin-bottom: 3%;
+}
+.line1{
+    /* background-color: #FF5F1F; */
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.line_1{
+    background-color: #929292;
+    width: 100px;
+    height: 1px;
+}
+.or{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.or > p{
+    color: #929292;
+    font-size: 16px;
+    font-family: Lato;
+    font-weight: 500;
+}
+.line2{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.line_2{
+    background-color: #929292;
+    width: 100px;
+    height: 1px;
+}
+.google-button{
+    /* background-color: red; */
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.google-button > a{
+    color: #B3B3B3;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 500;
+    transition: all 0.6s;
+}
+.google-button > a:hover{
+    color: #7e7d7d;
+}
