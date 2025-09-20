@@ -21,6 +21,7 @@
     backdrop-filter: blur(8px);
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 .axford_logo{
     /* background-color: blue; */
