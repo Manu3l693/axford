@@ -9,13 +9,12 @@ function ProtectedRoute({children}) {
         const handleLogin = async () =>{
             try{
                 const response = await fetch('http://localhost/axfordbackend/authCheck.php', {
-                    method: "POST",
                     credentials: "include" ,
-                    headers: {"Content-Type" : "application/json"},
                 })
 
-                const data = response.json()
-                setIsAuth(data.authenticatied)
+                const data = await response.json()
+                setIsAuth(data.authenticated)
+                
             }catch (error) {
             console.log(error);
             setIsAuth(false);  
@@ -29,7 +28,7 @@ function ProtectedRoute({children}) {
         <p>Loading...</p>
     }
 
-  return isAuth ? children : <Navigate to="/login"  replace/>
+  return isAuth ? <Navigate to={children} replace/> : <Navigate to="/login"  replace/>
 }
 
 export default ProtectedRoute

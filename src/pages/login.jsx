@@ -3,12 +3,10 @@ import {Link, useNavigate} from 'react-router-dom';
 import {React, useState} from 'react';
 
 function Login() {
-
   const [formData, setFormData] = useState({
     email: '',
     password: '',
   })
-
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
@@ -16,7 +14,6 @@ function Login() {
   const handleChange = (e)=>{
      setFormData({...formData, [e.target.name]: e.target.value});
   }
-
    const handleSubmit = async (e) => {
     e.preventDefault();
 
