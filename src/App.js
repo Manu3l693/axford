@@ -10,6 +10,7 @@ import Signup from "./pages/signup";
 import Login from "./pages/login";
 import Forgotpassword from "./pages/forgotpass";
 import LogOut from "./pages/logout";
+import Dashboard from "./pages/dashboard";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<LandingPage />}></Route>
             <Route path="/Explore" element={<ExplorePage />}></Route>
             <Route path="/Department" element={<Department />}></Route>
+            <Route path="/Dashboard" element={<Dashboard />}></Route>
             <Route path="/signup" element={<Signup />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/forgot" element={<Forgotpassword/>}></Route>

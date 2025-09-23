@@ -26,7 +26,7 @@ export default function ExplorePage(){
     const pages = [
         {name: 'Explore', path:"/Explore", color: '2px solid #FF3D00'},
         {name: 'Departments', path:"/Department"},
-        {name: 'Dashboard', path:"/"},
+        {name: 'Dashboard', path:"/Dashboard"},
         {name: 'Log out', path:"/logout"},
     ]
 

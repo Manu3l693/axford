@@ -26,7 +26,7 @@ function Department(){
     const pages = [
         {name: 'Explore', path:"/Explore"},
         {name: 'Departments', path:"/Department", color: '2px solid #FF3D00'},
-        {name: 'Dashboard', path:"/"},
+        {name: 'Dashboard', path:"/Dashboard"},
         {name: 'Log out', path:"/logout"},
     ]
 

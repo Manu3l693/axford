@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.dashboard_1{
+    /* background-color: red; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.dashboard_content{
+    /* background-color: blue; */
+    width: 100%;
+    flex: 1;
+}
+.dashboard_content_1{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 76% 24%;
+}
+.congratulations_content{
+    /* background-color: purple; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.congrat_1{
+    /* background-color: green; */
+    width: 554px;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+}
+.congrat_header{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.congrat_header > h3{
+    color: #353636;
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+.congrat_text{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.congrat_text > p{
+   color: #7B8179;
+    font-size: 16px;
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 26px; 
+}
+.congrat_button{
+    /* background-color: red; */
+    width: 100%;
+    flex: 1;
+}
+.congrat_button_1{
+    /* background-color: brown; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.congrat_button_1 > button{
+    background-color: #353636;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+.congrat_button_1 > button > a{
+    color: white;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.senior_auditor{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.senior_contact_info{
+    /* background-color: gold; */
+    width: 230px;
+    height: 269px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 5%;
+}
+.senior_image{
+    /* background-color: red; */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.senior_image > img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.senior_name{
+    /* background-color: aliceblue; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.senior_name > h3{
+    color: #1D1D1C;
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: 600;
+
+}
+.senior_name > p{
+    color: #7B8179;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 500;
+}
+
+.assigned{
+    /* background-color: indigo; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.assigned > p{
+    color: #1D1D1C;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 400;
+
+}
+.assigned > h4{
+    color: #32CD32;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 500;
+}
+.contact_button{
+    /* background-color: beige; */
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_button > button{
+    background-color: #353636;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+.contact_button > button > p{
+    color: white;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 20px;
+}
