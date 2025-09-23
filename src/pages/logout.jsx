@@ -1,4 +1,6 @@
-import {React} from 'react'
+import {React} from 'react';
+import './logout.css'
+import {useNavigate} from 'react-router-dom'
 
 function LogOut() {
 
@@ -25,14 +27,38 @@ function LogOut() {
             console.error('Something went wrong:', error);
         }
     }
+    const navigate = useNavigate();
+    function navigating(e){
+      e.preventDefault();
+
+      setTimeout(()=>{
+        navigate('/Explore')
+      }, 500)
+    }
 
 
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <button type="submit">logout</button>
-      </form>
+    <div className='login_page'>
+      <div className="login_page_1">
+        <div className="axford_logo">
+            <div className="red_dot"></div>
+            <h2>Axford & Co.</h2>
+        </div>
+
+        <div className="log_out">
+          <div className="warning_text">
+            <h2>Log out?</h2>
+          </div>
+
+          <form className='logout-form'>
+            <div className="logoutform">
+              <button type="submit" onClick={handleSubmit}>Yes</button>
+              <button type="button" onClick={navigating}>No</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   )
 }
