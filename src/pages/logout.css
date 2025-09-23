@@ -5,7 +5,7 @@
 .log_out{
     background-color: #fff;
     width: 350px;
-    height: 200px;
+    height: 150px;
     margin: 0 auto;
     margin-top: 10%;
     display: flex;
@@ -36,4 +36,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.logoutform > button{
+    background-color: #353636;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 13px;
+    color: #fff;
+    font-family: 600;
 }

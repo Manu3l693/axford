@@ -19,7 +19,7 @@ function LogOut() {
         if(result.success){
             alert(result.message)
 
-            window.location.href = '/login'
+            window.location.href = '/'
         } else{
             alert(result.error)
         }
