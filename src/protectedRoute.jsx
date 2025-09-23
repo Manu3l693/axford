@@ -1,4 +1,4 @@
-import {React, useState, useEffect} from "react"
+import {useState, useEffect} from "react"
 import { Navigate } from "react-router-dom";
 
 function ProtectedRoute({children}) {
@@ -13,7 +13,11 @@ function ProtectedRoute({children}) {
                 })
 
                 const data = await response.json()
-                setIsAuth(data.authenticated)
+                if (data.success) {
+                    setIsAuth(data.authenticated)
+                } else{
+                    setIsAuth(false)
+                }
                 
             }catch (error) {
             console.log(error);
@@ -28,7 +32,7 @@ function ProtectedRoute({children}) {
         <p>Loading...</p>
     }
 
-  return isAuth ? <Navigate to={children} replace/> : <Navigate to="/login"  replace/>
+  return isAuth ? children : <Navigate to="/login"  replace/>
 }
 
 export default ProtectedRoute
