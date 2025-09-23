@@ -56,7 +56,7 @@ function Dashboard() {
                 </div>
 
                 <div className="contact_button">
-                  <button><p>{congrats[1].bt}</p></button>
+                  <button><Link to="">{congrats[1].bt}</Link></button>
                 </div>
 
               </div>
