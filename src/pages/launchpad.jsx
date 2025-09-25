@@ -9,7 +9,7 @@ function LaunchPad(props) {
     const color4 = props.color4
     const projects = [
         {first: 'Project Review', path: '/projectreview', color: color1 },
-        {first: 'Control Assessment', path: '/', color: color2},
+        {first: 'Control Assessment', path: '/control', color: color2},
         {first: 'Client Interviews', path: '/', color: color3},
         {first: 'Independent Audits', path: '/', color: color4},
     ]

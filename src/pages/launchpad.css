@@ -5,19 +5,19 @@
 .project_launchpad{
     /* background-color: red; */
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: grid;
     grid-template-columns: 25% 50% 25%;
 }
 .empty_space{
     /* background-color: gold; */
     width: 100%;
-    height: 100px;
+    height: 100%;
 }
 .launch_header{
     /* background-color: blue; */
     width: 100%;
-    height: 100px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,9 +43,9 @@
 .progress_bar{
     /* background-color: green; */
     width: 100%;
-    height: 100px;
+    height: 100%;
     display: flex;
-    align-items: center;
+    position: relative;
 }
 .bar_1{
     background-color: #FFFFFF;
@@ -53,6 +53,8 @@
     height: 50px;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    bottom: 17%;
 }
 .bar_text{
     /* background-color: red; */
@@ -96,6 +98,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 2%;
+    margin-bottom: 3.5%;
 }
 .project_nav ul{
     /* background-color: red; */

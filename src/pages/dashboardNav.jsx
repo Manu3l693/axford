@@ -22,27 +22,29 @@ function DashboardNav() {
 
   return (
     <div>
-       <div className="navbar_1">
-        <div className="navbar_11">
-            <div className="logo">
-                <div className="axford_dot"></div>
-                <h3>Axford & Co.</h3>
-            </div>
+       <div className="navbar_111">
+          <div className="navbar_1">
+            <div className="navbar_11">
+                <div className="logo1">
+                    <div className="axford_dot"></div>
+                    <h3>Axford & Co.</h3>
+                </div>
 
-            <div className="icons">
-              {icons.map((icon, index) => <div className='icon-images' key={index}>
-                <div className="top-color" style={{backgroundColor: icon.color}}></div>
-                <Link to={icon.path}><img src={icon.img} alt='images'/></Link>
-                </div>)}
-            </div>
+                <div className="icons">
+                  {icons.map((icon, index) => <div className='icon-images' key={index}>
+                    <div className="top-color" style={{backgroundColor: icon.color}}></div>
+                    <Link to={icon.path}><img src={icon.img} alt='images'/></Link>
+                    </div>)}
+                </div>
 
-            <div className="auditor">
-              <button type="button"><p>Junior Auditor</p></button>
-              <div className="junior_image">
-                <img src={junior_author_img} alt="" />
-              </div>
+                <div className="auditor">
+                  <button type="button"><p>Junior Auditor</p></button>
+                  <div className="junior_image">
+                    <img src={junior_author_img} alt="" />
+                  </div>
+                </div>
             </div>
-        </div>
+          </div>
        </div>
     </div>
   )
