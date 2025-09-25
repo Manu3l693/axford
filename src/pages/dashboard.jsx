@@ -1,4 +1,4 @@
-import React from 'react'
+import {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom';
 import './dashboard.css'
 import senior_image from '../img/f9855f488816bbd4756f4a9e986b19c0233d984f.jpg'
@@ -7,8 +7,19 @@ import DashFooter from './dashfooter';
 
 function Dashboard() {
 
+  const [user, setUser] = useState();
+
+  useEffect(()=>{
+     const name = localStorage.getItem('user');
+    if (name) {
+      setUser(name)
+    } else{
+      setUser('Guest')
+    }
+  }, [])
+
   const congrats = [
-    {header: 'Congratulations on joining our team!', texts: " You're now all set to embark on an exciting journey with us. Take a moment to familiarize yourself with your dashboard, and when you're ready, dive into your tasks and projects."},
+    {header: `Congratulations ${user} on joining our team!`, texts: " You're now all set to embark on an exciting journey with us. Take a moment to familiarize yourself with your dashboard, and when you're ready, dive into your tasks and projects."},
     {img: senior_image, sj: ' Sarah Johnson', sa: 'Senior Auditor', se: 'sarah.johnson@example.com', am: 'Assigned mentor', bt: 'Contact'}
   ]
 
@@ -31,7 +42,7 @@ function Dashboard() {
 
                 <div className="congrat_button">
                  <div className="congrat_button_1">
-                  <button type='button'><Link to="">Explore Your Tasks</Link></button>
+                  <button type='button'><Link to="/projectreview">Explore Your Tasks</Link></button>
                  </div>
                 </div>
               </div>

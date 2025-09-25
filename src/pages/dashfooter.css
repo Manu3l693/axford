@@ -65,8 +65,8 @@
     justify-content: center;
 }
 .ball3 > img{
-    width: 19.5px;
-    height: 19.5px;
+    width: 20px;
+    height: 20px;
     object-fit: cover;
     object-position: center;
 }

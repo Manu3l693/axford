@@ -2,7 +2,7 @@ import React from "react";
 import './pages/Home.css';
 import './pages/Explore.css'
 import{BrowserRouter, Routes, Route} from 'react-router-dom';
-// import ProtectedRoute from "./protectedRoute";
+import ProjectReview from "./pages/projectReview";
 import LandingPage from "./pages/Home";
 import ExplorePage from "./pages/Explore";
 import Department from "./pages/Department";
@@ -21,6 +21,7 @@ function App() {
             <Route path="/Explore" element={<ExplorePage />}></Route>
             <Route path="/Department" element={<Department />}></Route>
             <Route path="/Dashboard" element={<Dashboard />}></Route>
+            <Route path="/projectreview" element={<ProjectReview/>}></Route>
             <Route path="/signup" element={<Signup />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/forgot" element={<Forgotpassword/>}></Route>

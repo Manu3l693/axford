@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import './dashboardNav.css'
 import img1 from '../img/home.svg';
 import img2 from '../img/folder.svg';
@@ -10,12 +11,14 @@ import junior_author_img from '../img/2588b21c8c64a52772784a3c354fa08294114e35.j
 function DashboardNav() {
 
     const icons = [
-      {img: img1, color: 'transparent'},
+      {img: img1, color: 'transparent', path:"/Explore"},
       {img: img2, color: 'transparent'}, 
       {img: img3, color: 'transparent'}, 
       {img: img4, color: 'transparent'}, 
       {img: img5, color: '#FF3D00'}
     ]
+
+    
 
   return (
     <div>
@@ -29,7 +32,7 @@ function DashboardNav() {
             <div className="icons">
               {icons.map((icon, index) => <div className='icon-images' key={index}>
                 <div className="top-color" style={{backgroundColor: icon.color}}></div>
-                <img src={icon.img} alt='images'/>
+                <Link to={icon.path}><img src={icon.img} alt='images'/></Link>
                 </div>)}
             </div>
 

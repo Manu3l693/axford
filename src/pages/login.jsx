@@ -31,6 +31,7 @@ function Login() {
         setErrorMessage(result.error.join(" "));
       } else{
         setMessage(result.message);
+        localStorage.setItem('user', result.name)
         setTimeout(() => {
           navigate('/Explore');
         }, 1000);
