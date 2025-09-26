@@ -43,7 +43,7 @@ function ControlAccess() {
 
                 <div className="training_text">
                     <div className="training_text_1">
-                        <p>Work with your assigned senior auditor to check controls and identify key areas.</p>
+                      <p>Work with your assigned senior auditor to check controls and identify key areas.</p>
                     </div>
                 </div>
             </div>
