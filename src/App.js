@@ -13,6 +13,8 @@ import LogOut from "./pages/logout";
 import Dashboard from "./pages/dashboard";
 import ControlAccess from "./pages/ControlAccess";
 import ClientInterview from "./pages/ClientInterview";
+import Independent from "./pages/independent";
+import Resources from "./pages/Resources";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
             <Route path="/projectreview" element={<ProjectReview/>}></Route>
             <Route path="control" element={<ControlAccess />}></Route>
             <Route path="/client" element={<ClientInterview />}></Route>
+            <Route path="/independent" element={<Independent />}></Route>
+            <Route path="/resources" element={<Resources/>}></Route>
             <Route path="/signup" element={<Signup />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/forgot" element={<Forgotpassword/>}></Route>

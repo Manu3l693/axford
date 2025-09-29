@@ -14,7 +14,7 @@ function DashboardNav() {
       {img: img1, color: 'transparent', path:"/Explore"},
       {img: img2, color: 'transparent'}, 
       {img: img3, color: 'transparent'}, 
-      {img: img4, color: 'transparent'}, 
+      {img: img4, color: 'transparent', path: "/resources"}, 
       {img: img5, color: '#FF3D00'}
     ]
 

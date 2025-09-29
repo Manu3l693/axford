@@ -11,7 +11,7 @@ function LaunchPad(props) {
         {first: 'Project Review', path: '/projectreview', color: color1 },
         {first: 'Control Assessment', path: '/control', color: color2},
         {first: 'Client Interviews', path: '/client', color: color3},
-        {first: 'Independent Audits', path: '/', color: color4},
+        {first: 'Independent Audits', path: '/independent', color: color4},
     ]
 
   return (
