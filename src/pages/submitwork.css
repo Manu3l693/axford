@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p.submit_work{
+    color: #7B8179;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 22px;
+}
+p.submit_work > span{
+    color: #4353FF;
+}
+.submit_email{
+    /* background-color: red; */
+    width: 100%;
+    height: 600px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+}
+.submit_email_1{
+    /* background-color: green; */
+    width: 685px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.email_submit{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.email_header{
+    /* background-color: indianred; */
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email_header > h3{
+    color: #1D1D1C;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 600;
+
+}
+.email_texts{
+    /* background-color: indigo; */
+    width: 100%;
+    height: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.email_texts > p{
+    color: #585959;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 400;
+}
+.email_texts > p > span{
+    color: #4353FF;
+}
+.large_file{
+    /* background-color: blue; */
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.large_file > h3{
+    color: #1D1D1C;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+.large_file > p{
+    color: #585959;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 400;
+}
+.large_file > p > span{
+    color: #4353FF;
+}

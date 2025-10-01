@@ -29,9 +29,10 @@
 .launch_header_1 > p{
     text-align: center;
     color: #7B8179;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Lato;
     font-weight: 400;
+    line-height: 22px;
 }
 .bar_1_1{
     background-color: #FFFFFF;

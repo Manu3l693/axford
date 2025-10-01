@@ -12,12 +12,30 @@ function DashboardNav() {
 
     const icons = [
       {img: img1, color: 'transparent', path:"/Explore"},
-      {img: img2, color: 'transparent'}, 
+      {img: img2, color: 'transparent', path: '/submitwork'}, 
       {img: img3, color: 'transparent'}, 
       {img: img4, color: 'transparent', path: "/resources"}, 
-      {img: img5, color: '#FF3D00'}
+      {img: img5, color: '#FF3D00', path: "", showNotis, NoNotis}
     ]
 
+    function showNotis(){
+      const check = document.querySelector('#showNotis')
+
+      if(check.classList.contains('hidden')){
+        check.classList.remove('hidden')
+      }else{
+        check.classList.add('hidden')
+      }
+    }
+
+    function NoNotis(){
+      const check = document.querySelector('#showNotis')
+      if(check.classList.contains('hidden')){
+        check.classList.add('hidden')
+      }else{
+        check.classList.remove('hidden')
+      }
+    }
     
 
   return (
@@ -33,7 +51,7 @@ function DashboardNav() {
                 <div className="icons">
                   {icons.map((icon, index) => <div className='icon-images' key={index}>
                     <div className="top-color" style={{backgroundColor: icon.color}}></div>
-                    <Link to={icon.path}><img src={icon.img} alt='images'/></Link>
+                    <Link to={icon.path} onMouseEnter={icon.showNotis} onMouseLeave={icon.NoNotis}><img src={icon.img} alt='images'/></Link>
                     </div>)}
                 </div>
 
@@ -44,6 +62,13 @@ function DashboardNav() {
                   </div>
                 </div>
             </div>
+          </div>
+       </div>
+
+       <div className="showNotis hidden" id='showNotis'>
+          <div className="show_notis_text">
+            <h3>Notifications</h3>
+            <p>4 Unread</p>
           </div>
        </div>
     </div>
