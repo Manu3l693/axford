@@ -15,8 +15,10 @@ export default function LandingPage(){
            <div className="landing_f_f_1">
              <div className="first-container">
                 <div className="empowering_f">
-                    <h2>Empowering Your Financial Future</h2>
-                    <p>We are dedicated to helping our clients achieve financial clarity and success</p>
+                    <div className="empowering_ff_">
+                      <h2>Empowering Your Financial Future</h2>
+                      <p>We are dedicated to helping our clients achieve financial clarity and success</p>
+                    </div>
                 </div>
 
                 <div className="text_button">
