@@ -15,10 +15,13 @@
     height: 100vh;
 }
 .signup-background-1{
+    /* background-color: red; */
     background-color: rgba(0,0,0,.2);
     backdrop-filter: blur(8px);
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .axford-signup-logo{
     background-color: rgba(255,255,255, 0.7);
@@ -45,6 +48,19 @@
 }
 .sign-up-border{
     /* background-color: yellow; */
+    width: 100%;
+    flex: 1;
+}
+.sign_up_border__{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign_up_border_1{
+    /* background-color: purple; */
     width: 450px;
     height: 500px;
     margin: 0 auto;

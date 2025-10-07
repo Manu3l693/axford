@@ -22,6 +22,8 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .axford_logo{
     /* background-color: blue; */
@@ -47,8 +49,21 @@
     font-family: Montserrat;
     font-weight: 500;
 }
+.login_border__1{
+    /* background-color: blue; */
+    width: 100%;
+    flex: 1;
+}
+.login_border__{
+    /* background-color: orange; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .login_border{
-    /* background-color: #fff; */
+    /* background-color: purple; */
     width: 450px;
     height: 500px;
     margin: 0 auto;

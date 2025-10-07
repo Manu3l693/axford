@@ -8,6 +8,7 @@
     height: 150px;
     display: grid;
     grid-template-columns: 25% 55% 20%;
+    position: relative;
 }
 .empty_space{
     /* background-color: gold; */

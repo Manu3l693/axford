@@ -79,7 +79,9 @@ function Signup() {
             </div>
 
             <div className="sign-up-border">
-                <div className="signup-page">
+               <div className="sign_up_border__">
+                   <div className="sign_up_border_1">
+                  <div className="signup-page">
                     <div className="sign-up-header">
                         <h2>Sign Up</h2>
                     </div>
@@ -148,6 +150,8 @@ function Signup() {
                     </form>
                     </div>
                 </div>
+                </div>
+               </div>
             </div>
         </div>
     </div>

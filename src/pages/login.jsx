@@ -32,6 +32,7 @@ function Login() {
       } else{
         setMessage(result.message);
         localStorage.setItem('user', result.name)
+        localStorage.setItem('authCheck', true)
         setTimeout(() => {
           navigate('/Explore');
         }, 1000);
@@ -65,7 +66,9 @@ function Login() {
             <h2>Axford & Co.</h2>
         </div>
 
-        <div className="login_border">
+        <div className="login_border__1">
+          <div className="login_border__">
+          <div className="login_border">
           <form className='login_border_1' onSubmit={handleSubmit}>
             <div className="login_border_texts">
               <h4>Employee Portal</h4>
@@ -112,6 +115,8 @@ function Login() {
             <p style={styleMessage}>{message}</p>
             <p style={styleErrorMessage}>{errorMessage}</p>
           </form>
+        </div>
+        </div>
         </div>
        </div>
     </div>
