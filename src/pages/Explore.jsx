@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import './Explore.css'
 import Footer from './footer';
@@ -17,36 +17,36 @@ import keyInf3 from '../img/badge 1.svg';
 import FirstCarousel from '../firstCarousel';
 
 export default function ExplorePage(){
-    const[click, setClick] = useState(false);
-    const[width, setWidth] = useState('0px');
-    const[fontSize, setFontSize] = useState('0px')
-    const[play, setPlay] = useState(false);
+
+    const [mobileWidth, setMobileWidth] = useState('0px')
+    const [trans, setTrans] = useState('0')
+    const [click, setClick] =useState(false)
+    const [fontSize, setFontSize] = useState('0px')
+    const [cancel, setCancel] = useState('40px')
+    const [cancelSize, setCancelSize] = useState('0px')
+    const [pause, setPause] = useState(false)
+
+    const changeThing = () => {
+        setMobileWidth(m => m === '0px' ? '300px' : '0px')
+        setTrans('all 0.6s')
+        setClick(!click)
+        setFontSize(f => f === '0px' ? '12px' : '0px' )
+        setCancel(c => c ==='40px' ? '0' : '40px')
+        setCancelSize(cz => cz === '0px' ? '15px' : '0px')
+    }
+
+    const handleVideoPlay =  () =>{
+        setPause(!pause)
+    }
+
 
     
-    const pages = [
-        {name: 'Explore', path:"/Explore", color: '2px solid #FF3D00'},
-        {name: 'Departments', path:"/Department"},
-        {name: 'Dashboard', path:"/Dashboard"},
-        {name: 'Log out', path:"/logout"},
+    const links = [
+        {name: 'Explore', path: '/Explore', color: '2px solid #FF3D00'}, 
+        {name: 'Departments', path: '/Department', color: 'transparent'}, 
+        {name: 'Dashboard', path: '/Dashboard', color: 'transparent'}, 
+        {name: 'Log out', path: '/logout', color: 'transparent'}
     ]
-
-    function handlleClick(){
-        setClick(!click)
-       setWidth(w => w === '0px' ? '300px' : '0px')
-       setFontSize(f => f === '0px' ? '15px' : '0px')
-    }
-
-    const videoRef = useRef(null);
-
-    function handleVideo(){
-        setPlay(!play);
-
-        if(videoRef.current){
-            videoRef.current.play()
-        }else{
-            videoRef.current.pause()
-        }
-    }
 
     const important_contacts = [
         {image: imp1, name: 'Lisa Brown', role: 'HR Manager'}, 
@@ -62,24 +62,43 @@ export default function ExplorePage(){
     ]
     return(
         <div>
-            <nav className="navbar">
-                <div className="logo">
-                    <div className='dot-logo'></div>
-                    <Link className='logo-name' to={"/"}>Axford & Co.</Link>
-                    <button className='navbutton hidden' onClick={handlleClick}><i className={click ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i></button>
+
+            <div className="navbar11">
+                <div className="navbar___11">
+                    <div className="axford_logo__1">
+                        <div className="axfordd_logo_dots">
+                            <div className="axford_dotss_1"></div>
+                            <Link to='/'>Axford & Co.</Link>
+                        </div>
+
+                        <div className="axford_button_1">
+                            <div className="axford_butons_1"  onClick={changeThing}>
+                                <i class={click ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="axford_logo__linkss">
+                        <ul>
+                           {links.map((link, index) => <li style={{borderBottom: link.color}} key={index}><Link to={link.path}>{link.name}</Link></li>)} 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="mobile_view_nav"  id='mobileNav' style={{width: mobileWidth, transition: trans}}>
+                <div className="mobile_cancel">
+                    <div className="mobile_cancel_1" onClick={changeThing} style={{width: cancel}}>
+                        <i style={{fontSize: cancelSize, transition: trans}} class={click ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
+                    </div>
                 </div>
 
-                <ul className='nav-links'>
-                    {pages.map((page, index)=> <li key={index} style={{borderBottom: page.color}}><Link className='page-link' to={page.path}>{page.name}</Link></li>)}
-                </ul>
-            </nav>
-
-            <div className="page-links-desktop " id='Page-links' style={{width: width}}>
-                <button className='closebtn' onClick={handlleClick} id='btn-hidden'><i className={click ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i></button>
-                <div className="page-small-link" style={{width: width}}>
-                    <ul className='ul-links' style={{width: width}}>
-                        {pages.map((page, index) => <li key={index}><Link to={page.path} className='page-link' style={{fontSize: fontSize}}>{page.name}</Link></li>)}
-                    </ul>
+                <div className="mobile_links">
+                    <div className="mobile_links_1">
+                        <ul>
+                            {links.map((link, index)=> <li style={{borderBottom: link.color}} key={index}><Link to={link.path} style={{fontSize: fontSize, transition: trans}}>{link.name}</Link></li>)}
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -88,16 +107,15 @@ export default function ExplorePage(){
                     <div className="welcome-text">
                         <h1>Welcome Onboard!</h1>
                         <p>We're excited to have you with us! To help you get started, please watch the introductory video below to familiarize yourself with our company and its structure.</p>
-                        <button onClick={handleVideo}><div className="video-icon"><i className={play ? "fa-solid fa-play" : "fa-solid fa-pause"}></i></div> Watch the Video</button>
+                        <button onClick={handleVideoPlay}><div className="video-icon"><i class={pause ? "fa-solid fa-play" : "fa-solid fa-pause"}></i></div>   Watch the Video</button>
                     </div>
                 </div>
 
                 <div className="play-video">
-                    <video ref={videoRef} loop muted className='video1'>
+                    <video loop muted autoPlay className='video1'>
                         <source src={video} type="video/mp4" />
                     </video>
                 </div>
-
             </div>
 
             <div className="about-us">
@@ -223,9 +241,6 @@ export default function ExplorePage(){
                                     <p>Access important resources, company news, and updates through our Employee Portal: <span>Employee Portal Link.</span>This portal will be your go-to for everything you need to stay informed and connected.</p>
                                 </div>
                             </div>
-
-
-                            
                         </div>
                         </div>
                     </div>

@@ -14,21 +14,28 @@ import Footer from './footer.jsx'
 
 function Department(){
 
-    const [click, setClick] = useState(false);
-    const [width, setWidth] = useState('0px');
-    const [fontSize, setFontSize] = useState('0px');
-    function handleClick(){
-        setClick(!click)
-        setWidth(w => w === '0px' ? '300px' : '0px')
-        setFontSize(f => f === '0px'? '15px' : '0px')
-    }
+        const [mobileWidth, setMobileWidth] = useState('0px')
+        const [trans, setTrans] = useState('0')
+        const [click, setClick] =useState(false)
+        const [fontSize, setFontSize] = useState('0px')
+        const [cancel, setCancel] = useState('40px')
+        const [cancelSize, setCancelSize] = useState('0px')
+    
+        const changeThing = () => {
+            setMobileWidth(m => m === '0px' ? '300px' : '0px')
+            setTrans('all 0.6s')
+            setClick(!click)
+            setFontSize(f => f === '0px' ? '12px' : '0px' )
+            setCancel(c => c ==='40px' ? '0' : '40px')
+            setCancelSize(cz => cz === '0px' ? '15px' : '0px')
+        }
 
-    const pages = [
-        {name: 'Explore', path:"/Explore"},
-        {name: 'Departments', path:"/Department", color: '2px solid #FF3D00'},
-        {name: 'Dashboard', path:"/Dashboard"},
-        {name: 'Log out', path:"/logout"},
-    ]
+        const links = [
+        {name: 'Explore', path: '/Explore', color: 'transparent'}, 
+        {name: 'Departments', path: '/Department', color: '2px solid #FF3D00'}, 
+        {name: 'Dashboard', path: '/Dashboard', color: 'transparent'}, 
+        {name: 'Log out', path: '/logout', color: 'transparent'}
+        ]
 
     const images = [img1, img2, img3, img4, img5, img6, img7];
     const whatTheyDo = [
@@ -43,26 +50,46 @@ function Department(){
 
     return(
         <div>
-            <nav className="navbar1">
-                <div className="logo">
-                    <div className='dot-logo'></div>
-                    <Link className='logo-name1' to={"/"}>Axford & Co.</Link>
-                    <button className='navbutton hidden' onClick={handleClick}><i className={click ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i></button>
-                </div>
 
-                <ul className='nav-links1'>
-                    {pages.map((page, index)=> <li key={index} style={{borderBottom: page.color}}><Link className='page-link' to={page.path}>{page.name}</Link></li>)}
-                </ul>
-            </nav>
-
-            <div className="page-links-desktop " id='Page-links' style={{width: width}}>
-              <button className='closebtn' onClick={handleClick} id='btn-hidden'><i className={click ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i></button>
-                <div className="page-small-link" style={{width: width}}>
-                   <ul className='ul-links' style={{width: width}}>
-                      {pages.map((page, index) => <li key={index}><Link to={page.path} className='page-link' style={{fontSize: fontSize}}>{page.name}</Link></li>)}              
-                   </ul>             
-                </div>                      
+            <div className="navbar111">
+                            <div className="navbar___11">
+                                <div className="axford_logo__1">
+                                    <div className="axfordd_logo_dots">
+                                        <div className="axford_dotss_1"></div>
+                                        <Link to='/' className='black_logo'>Axford & Co.</Link>
+                                    </div>
+            
+                                    <div className="axford_button_1">
+                                        <div className="axford_butons_1"  onClick={changeThing}>
+                                            <i class={click ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div className="axford_logo__linkss">
+                                    <ul>
+                                       {links.map((link, index) => <li style={{borderBottom: link.color}} key={index}><Link to={link.path} className='black_links'>{link.name}</Link></li>)} 
+                                    </ul>
+                                </div>
+                            </div>
             </div>
+            
+            <div className="mobile_view_nav"  id='mobileNav' style={{width: mobileWidth, transition: trans}}>
+                            <div className="mobile_cancel">
+                                <div className="mobile_cancel_1" onClick={changeThing} style={{width: cancel}}>
+                                    <i style={{fontSize: cancelSize, transition: trans}} class={click ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
+                                </div>
+                            </div>
+            
+                            <div className="mobile_links">
+                                <div className="mobile_links_1">
+                                    <ul>
+                                        {links.map((link, index)=> <li style={{borderBottom: link.color}} key={index}><Link to={link.path} style={{fontSize: fontSize, transition: trans}}>{link.name}</Link></li>)}
+                                    </ul>
+                                </div>
+                            </div>
+            </div>
+            
 
             <TheyDo image={images[0]} header={whatTheyDo[0].header} member={whatTheyDo[0].member} theyDo={whatTheyDo[0].theydo} audit={whatTheyDo[0].audit} keyy={whatTheyDo[0].keyy} conducted={whatTheyDo[0].conducted} headOf={whatTheyDo[0].headOf} lee={whatTheyDo[0].lee}/>
             <ReverseTheyDo image={images[1]} header={whatTheyDo[1].header} member={whatTheyDo[1].member} theyDo={whatTheyDo[1].theydo} audit={whatTheyDo[1].audit} keyy={whatTheyDo[1].keyy} conducted={whatTheyDo[1].conducted} headOf={whatTheyDo[1].headOf} lee={whatTheyDo[1].lee}/>
