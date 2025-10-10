@@ -212,9 +212,9 @@ export default function ExplorePage(){
 
                                 <div className="reg2-text-list">
                                     <ul>
-                                        <li>HR Manager: Lisa Brown (<span>lisa.brown@company.com</span>, +1 555-123-4567)</li>
-                                        <li>IT Support: <span>support@company.com</span>, +1 555-234-5678</li>
-                                        <li>Department Heads: Refer to the internal directory for specific contacts</li>
+                                        <li><p>HR Manager: Lisa Brown (<span>lisa.brown@company.com</span>, +1 555-123-4567)</p></li>
+                                        <li><p>IT Support: <span>support@company.com</span>, +1 555-234-5678</p></li>
+                                        <li><p>Department Heads: Refer to the internal directory for specific contacts</p></li>
                                     </ul>
                                 </div>
                             </div>
@@ -249,147 +249,147 @@ export default function ExplorePage(){
 
            <div className="important_contacts">
                <div className="important_contacts_1">
-                 <div className="important_contact_texts">
-                    <h2>Important Contacts</h2>
-                </div>
-
-                <div className="important_people">
-                    <div className="important_people_1">
-                        <div className="important_image">
-                            <img src={important_contacts[0].image} alt="img" />
-                        </div>
-
-                        <div className="important_details">
-                            <h4>{important_contacts[0].name}</h4>
-                            <p>{important_contacts[0].role}</p>
-                        </div>
+                    <div className="important_contact_texts">
+                        <h2>Important Contacts</h2>
                     </div>
 
-                    <div className="important_people_1">
-                        <div className="important_image">
-                            <img src={important_contacts[1].image} alt="img" />
+                    <div className="important_people">
+                        <div className="important_people_1">
+                            <div className="important_image">
+                                <img src={important_contacts[0].image} alt="img" />
+                            </div>
+
+                            <div className="important_details">
+                                <h4>{important_contacts[0].name}</h4>
+                                <p>{important_contacts[0].role}</p>
+                            </div>
                         </div>
 
-                        <div className="important_details">
-                            <h4>{important_contacts[1].name}</h4>
-                            <p>{important_contacts[1].role}</p>
+                        <div className="important_people_1">
+                            <div className="important_image">
+                                <img src={important_contacts[1].image} alt="img" />
+                            </div>
+
+                            <div className="important_details">
+                                <h4>{important_contacts[1].name}</h4>
+                                <p>{important_contacts[1].role}</p>
+                            </div>
+                        </div>
+
+                        <div className="important_people_1">
+                            <div className="important_image">
+                                <img src={important_contacts[2].image} alt="img" />
+                            </div>
+
+                            <div className="important_details">
+                                <h4>{important_contacts[2].name}</h4>
+                                <p>{important_contacts[2].role}</p>
+                            </div>
+                        </div>
+
+                        <div className="important_people_1">
+                            <div className="important_image">
+                                <img src={important_contacts[3].image} alt="img" />
+                            </div>
+
+                            <div className="important_details">
+                                <h4>{important_contacts[3].name}</h4>
+                                <p>{important_contacts[3].role}</p>
+                            </div>
                         </div>
                     </div>
-
-                    <div className="important_people_1">
-                        <div className="important_image">
-                            <img src={important_contacts[2].image} alt="img" />
-                        </div>
-
-                        <div className="important_details">
-                            <h4>{important_contacts[2].name}</h4>
-                            <p>{important_contacts[2].role}</p>
-                        </div>
-                    </div>
-
-                    <div className="important_people_1">
-                        <div className="important_image">
-                            <img src={important_contacts[3].image} alt="img" />
-                        </div>
-
-                        <div className="important_details">
-                            <h4>{important_contacts[3].name}</h4>
-                            <p>{important_contacts[3].role}</p>
-                        </div>
-                    </div>
-                </div>
 
                </div>
            </div>
 
            <div className="key_information11">
-            <div className="key_information_1">
-                <div className="key-info-text">
-                    <h2>Key Information</h2>
-                </div>
+                <div className="key_information_1">
+                    <div className="key-info-text">
+                        <h2>Key Information</h2>
+                    </div>
 
-                <div className="key-info-img-cont">
-                    <div className="key-info-img">
-                        <div className="keycont-1">
-                            <div className="keyimg">
-                                <img src={key_information[0].image} alt="" />
+                    <div className="key-info-img-cont">
+                        <div className="key-info-img">
+                            <div className="keycont-1">
+                                <div className="keyimg">
+                                    <img src={key_information[0].image} alt="" />
+                                </div>
+
+                                <div className="key_header">
+                                    <h3>{key_information[0].header}</h3>
+                                </div>
+
+                                <div className="key_content-text">
+                                    <p>{key_information[0].text}</p>
+                                </div>
                             </div>
 
-                            <div className="key_header">
-                                <h3>{key_information[0].header}</h3>
+                            <div className="keycont-1">
+                                <div className="keyimg">
+                                    <img src={key_information[1].image} alt="" />
+                                </div>
+
+                                <div className="key_header">
+                                    <h3>{key_information[1].header}</h3>
+                                </div>
+
+                                <div className="key_content-text">
+                                    <p>{key_information[1].text}</p>
+                                </div>
                             </div>
 
-                            <div className="key_content-text">
-                                <p>{key_information[0].text}</p>
-                            </div>
-                        </div>
+                            <div className="keycont-1">
+                                <div className="keyimg">
+                                    <img src={key_information[2].image} alt="" />
+                                </div>
 
-                        <div className="keycont-1">
-                            <div className="keyimg">
-                                <img src={key_information[1].image} alt="" />
-                            </div>
+                                <div className="key_header">
+                                    <h3>{key_information[2].header}</h3>
+                                </div>
 
-                            <div className="key_header">
-                                <h3>{key_information[1].header}</h3>
-                            </div>
-
-                            <div className="key_content-text">
-                                <p>{key_information[1].text}</p>
-                            </div>
-                        </div>
-
-                        <div className="keycont-1">
-                            <div className="keyimg">
-                                <img src={key_information[2].image} alt="" />
-                            </div>
-
-                            <div className="key_header">
-                                <h3>{key_information[2].header}</h3>
-                            </div>
-
-                            <div className="key_content-text">
-                                <p>{key_information[2].text}</p>
+                                <div className="key_content-text">
+                                    <p>{key_information[2].text}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
            </div>
 
            <div className="what_our_client">
-             <div className="what_they_say">
-                <h2>What Our Clients Are Saying</h2>
-                
-                <div className="what-text">
-                    <p>Our clients are at the heart of everything we do. Here are some testimonials from clients who have experienced our commitment to excellence and innovation firsthand.</p>
+                <div className="what_they_say">
+                    <h2>What Our Clients Are Saying</h2>
+                    
+                    <div className="what-text">
+                        <p>Our clients are at the heart of everything we do. Here are some testimonials from clients who have experienced our commitment to excellence and innovation firsthand.</p>
+                    </div>
                 </div>
-             </div>
 
-             <div className="quotations">
-                <div className="quotation_1">
-                    <div className="quote-img">
-                        <p> ,,</p>
-                    </div>
-                    <div className="quote-text">
-                        <p>"Working with Axford & co. has transformed our financial operations. Their expertise and dedication have streamlined our processes, saving us both time and money. Truly a game-changer!"</p>
-                    </div>
-                    <div className="quote_headers">
-                        <h4>John Doe</h4>
-                        <p>CEO of Tech Innovators</p>
+                <div className="quotations">
+                    <div className="quotation_1">
+                        <div className="quote-img">
+                            <p> ,,</p>
+                        </div>
+                        <div className="quote-text">
+                            <p>"Working with Axford & co. has transformed our financial operations. Their expertise and dedication have streamlined our processes, saving us both time and money. Truly a game-changer!"</p>
+                        </div>
+                        <div className="quote_headers">
+                            <h4>John Doe</h4>
+                            <p>CEO of Tech Innovators</p>
+                        </div>
                     </div>
                 </div>
-             </div>
 
-             <div className="client_img">
-                <div className="client_img_1">
-                    <div className="client1"></div>
-                    <div className="client2"></div>
-                    <div className="client3"></div>
-                    <div className="client4">
-                        <p>10+</p>
+                <div className="client_img">
+                    <div className="client_img_1">
+                        <div className="client1"></div>
+                        <div className="client2"></div>
+                        <div className="client3"></div>
+                        <div className="client4">
+                            <p>10+</p>
+                        </div>
                     </div>
                 </div>
-             </div>
            </div>
 
            <Footer />

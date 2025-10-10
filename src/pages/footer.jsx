@@ -87,11 +87,11 @@ function Footer(){
                     </div>
                 </div>
 
-                 <div className="copy-rights">
+                <div className="copy-rights">
                     <div className="copy-right-text">
                         <p>© 2024 Axford. All rights reserved.</p>
                     </div>
-                 </div>
+                </div>
              </div>
            </footer>
         </div>

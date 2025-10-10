@@ -41,39 +41,39 @@ function FirstCarousel() {
                         <div className="deprtmnt-ppl">
                             <div className="deprtmnt-ppl-1">
                                 <div className="deprtmnt_ppl_1">
-                                <div className="profile_pic">
-                                    <div className="profile-img-11">
-                                        <div className="profile-img">
-                                            <img src={depimg1} alt="" />
+                                    <div className="profile_pic">
+                                        <div className="profile-img-11">
+                                            <div className="profile-img">
+                                                <img src={depimg1} alt="" />
+                                            </div>
+                                        </div>
+
+                                        <div className="profile-for-head">
+                                            <div className="profile_head">
+                                                <button type="button">Head of Department</button>
+                                                <h3>Michael Lee</h3>
+                                                <p>Financial Officer</p>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div className="profile-for-head">
-                                        <div className="profile_head">
-                                            <button type="button">Head of Department</button>
-                                            <h3>Michael Lee</h3>
-                                            <p>Financial Officer</p>
+
+                                    <div className="profile_text">
+                                        <div className="profile_text_1">
+                                            <p>This department is responsible for managing the company's financial operations, including budgeting, financial reporting, and compliance with regulatory requirements. They ensure the financial health of the company by maintaining accurate financial records, analyzing financial data, and developing strategic financial plans.</p>
+                                        </div>
+
+                                        <div className="profile_text_below">
+                                            <div className="green-dot">
+                                                <div className="green_dot_1"></div>
+                                            </div>
+
+                                            <div className="green_dot_content">
+                                                <p>Successfully managed over $1 billion in financial transactions, maintaining impeccable accuracy and compliance.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-
-                                <div className="profile_text">
-                                    <div className="profile_text_1">
-                                        <p>This department is responsible for managing the company's financial operations, including budgeting, financial reporting, and compliance with regulatory requirements. They ensure the financial health of the company by maintaining accurate financial records, analyzing financial data, and developing strategic financial plans.</p>
-                                    </div>
-
-                                    <div className="profile_text_below">
-                                        <div className="green-dot">
-                                            <div className="green_dot_1"></div>
-                                        </div>
-
-                                        <div className="green_dot_content">
-                                            <p>Successfully managed over $1 billion in financial transactions, maintaining impeccable accuracy and compliance.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             </div>
                         </div>
                     </div>
