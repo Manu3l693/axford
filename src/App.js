@@ -1,7 +1,7 @@
 import React from "react";
 import './pages/Home.css';
 import './pages/Explore.css'
-import{BrowserRouter, Routes, Route} from 'react-router-dom';
+import{HashRouter as Router, Routes, Route} from 'react-router-dom';
 import ProjectReview from "./pages/projectReview";
 import LandingPage from "./pages/Home";
 import ExplorePage from "./pages/Explore";
@@ -20,7 +20,7 @@ import SubmitWork from "./pages/SubmitWork";
 function App() {
   return (
       <>
-       <BrowserRouter>
+       <Router>
           <Routes>
             <Route path="/" element={<LandingPage />}></Route>
             <Route path="/Explore" element={<ExplorePage />}></Route>
@@ -37,7 +37,7 @@ function App() {
             <Route path="/forgot" element={<Forgotpassword/>}></Route>
             <Route path="/logout" element={<LogOut/>}></Route>
           </Routes>
-       </BrowserRouter>
+       </Router>
 
        
       </>
