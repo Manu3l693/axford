@@ -335,3 +335,21 @@ p.submit_work{
     text-align: center;
 }
 }
+
+@media(min-width: 601px) and (max-width: 1024px){
+.project_launchpad_1{
+    width: 100%;
+    height: 190px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    position: relative;
+}
+.progress_bar{
+    justify-content: center;
+}
+.bar_1_1{
+    width: 140px;
+    height: 45px;
+}
+
+}

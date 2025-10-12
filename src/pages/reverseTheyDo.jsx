@@ -18,31 +18,31 @@ function ReverseTheyDo(props){
             <div className="first_people">
                 <div className="first_people_1">
                     <div className="people_content_box1">
-                    <div className="people_content_11">
-                        <div className="they_do">
-                            <h3>{theyDo}</h3>
-                        </div>
+                        <div className="people_content_11">
+                            <div className="they_do">
+                                <h3>{theyDo}</h3>
+                            </div>
 
-                        <div className="audit">
-                            <p>{audit}</p>
-                        </div>
+                            <div className="audit">
+                                <p>{audit}</p>
+                            </div>
 
-                        <div className="key_achievement">
-                            <h3>{keyy}</h3>
-                        </div>
+                            <div className="key_achievement">
+                                <h3>{keyy}</h3>
+                            </div>
 
-                        <div className="conducted">
-                            <p>{conducted}</p>
-                        </div>
+                            <div className="conducted">
+                                <p>{conducted}</p>
+                            </div>
 
-                        <div className="head_f_department">
-                            <h3>{headOf}</h3>
-                        </div>
+                            <div className="head_f_department">
+                                <h3>{headOf}</h3>
+                            </div>
 
-                        <div className="david_lee">
-                            <p>{lee}</p>
+                            <div className="david_lee">
+                                <p>{lee}</p>
+                            </div>
                         </div>
-                    </div>
                     </div>
 
                     <div className="people_img_box">

@@ -265,3 +265,59 @@
 
 }
 }
+
+@media(min-width: 601px) and (max-width: 1024px){
+.tools_row{
+    width: 100%;
+    height: 250px;
+}
+.tools_container{
+    width: 97%;
+}
+.tools_1{
+    width: 140px;
+    height: 90%;
+}
+.tool-img{
+    width: 40px;
+    height: 40px;
+}
+.tool-img > img{
+    width: 100%;
+    height: 100%;
+}
+.tool_text > h3{
+    font-size: 9px;
+}
+.tool_button{
+    width: 80%;
+}
+.tool_button > button{
+    height: 35px;
+}
+
+
+
+.tools_1_1{
+    width: 140px;
+    height: 90%;
+}
+.tool-img-1{
+    width: 40px;
+    height: 40px;
+}
+.tool-img-1 > img{
+    width: 100%;
+    height: 100%;
+}
+.tool_text_1 > h3{
+    font-size: 9px;
+}
+.tool_button_1{
+    width: 80%;
+}
+.tool_button_1 > button{
+    width: 100%;
+    height: 35px;
+}
+}

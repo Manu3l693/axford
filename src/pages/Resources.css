@@ -121,3 +121,13 @@ input::placeholder{
     position: relative;
 }
 }
+
+@media(min-width: 601px) and (max-width: 1024px){
+.tools_and_resources{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+}

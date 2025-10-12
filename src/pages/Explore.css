@@ -1389,4 +1389,328 @@
 
 
 }
+@media(min-width: 601px) and (max-width: 1024px){
+.navbar___11{
+    width: 97%;
+}
+.axford_dotss_1{
+    margin-right: 5%;
+}
+.axford_logo__linkss > ul{
+    justify-content: space-between;
+}
+.axford_logo__linkss > ul > li{
+    width: 90px;
+    height: 100%;
+}
+.axford_logo__linkss > ul > li > a{
+    font-size: 13px;
+}
+
+/*about-us*/
+
+.about-us{
+    /* background-color: red; */
+    height: 550px;
+    margin-bottom: 10%;
+    position: relative;
+}
+.about-us-1{
+    /* background-color: yellow; */
+    width: 97%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+.about-us-content{
+    /* background-color: blue; */
+    width: 97%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-text-content{
+    /* background-color: purple; */
+    margin: 0 0;
+    width: 100%;
+    height: 80%;
+}
+
+
+
+/*out-founders-1*/
+
+.out-founders-1{
+    /* background-color: red; */
+    width: 100%;
+    height: 550px;
+}
+.our-founder-photo{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-founder-photo-1{
+    /* background-color: yellow; */
+    width: 97%;
+    height: 100%;
+}
+.indiv-1{
+    width: 180px;
+    height: 240px;
+    position: relative;
+}
+.indiv-1 img{
+    width: 100%;
+    height: 240px;
+}
+.nam-occ-1{
+    height: 60px;
+}
+.nam-occ-1 > h3{
+    font-size: 14px;
+}
+.nam-occ-1 > p{
+    font-size: 11px;
+}
+
+/*getting started */
+
+.getting-started{
+    width: 100%;
+    height: 600px;
+}
+.started-header{
+    width: 97%;
+}
+.office_hour{
+    width: 97%;
+    height: 100%;
+}
+.office_hour_1{
+    width: 100%;
+    height: 100%;
+}
+.our_reg_1{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.reg1{
+    /* background-color: yellow; */
+    width: 365px;
+    height: 200px;
+}
+.reg2{
+    /* background-color: blue; */
+    width: 365px;
+    height: 200px;
+}
+.reg2-text-list{
+    width: 100%;
+    height: 70%;
+}
+
+
+/* important_contacts */
+
+.important_contacts{
+    width: 100%;
+}
+.important_contacts_1{
+    width: 97%;
+}
+.important_people_1{
+    width: 180px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.important_image{
+    width: 100%;
+    height: 240px;
+}
+.important_image > img{
+    width: 100%;
+    height: 240px;
+}
+
+
+
+/* .key_information11 */
+.key_information_1{
+    width: 97%;
+    height: 450px;
+}
+.key-info-img-cont{
+    width: 100%;
+    flex: 1;
+}
+.keycont-1{
+    /* background-color: red; */
+    width: 240px;
+    height: 280px;
+}
+
+
+/* what_our_client */
+
+.what_our_client{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+}
+.what_they_say{
+    /* background-color: green; */
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.what_they_say > h2{
+    color: #353636;
+    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.what-text{
+    /* background-color: blue; */
+    width: 637px;
+    height: 60px;
+    text-align: center;
+}
+.what-text > p{
+    color: #7B8179;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 30px;
+}
+.quotations{
+    /* background-color: red; */
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quotation_1{
+    /* background-color: green; */
+    width: 65%;
+    height: 85%;
+    border: 2px solid #F5F5F5;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.quote-img{
+    /* background-color: brown; */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+}
+.quote-img p{
+    color: #1D1D1C;
+    font-size: 50px;
+    font-family: Lato;
+    font-weight: 400;
+    position: absolute;
+    bottom: 30%;
+}
+.quote-text{
+    /* background-color: antiquewhite; */
+    width: 480px;
+    height: 120px;
+    text-align: center;
+}
+.quote-text > p{
+    color: #585859;
+    font-size: 13px;
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 30px;
+}
+.quote_headers{
+    /* background-color: #4353FF; */
+    width: 145px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.quote_headers > h4{
+    color: #1D1D1C;
+    font-size: 15px;
+    font-family: Lato;
+    font-weight: 600;
+}
+.quote_headers > p{
+    color: #7B8179;
+    font-size: 13px;
+    font-family: Lato;
+    font-weight: 400;
+}
+.client_img{
+    /* background-color: blue; */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client_img_1{
+    /* background-color: yellow; */
+    width: 220px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.client1, .client2, .client3, .client4{
+    /* background-color: red; */
+    background-image: url('../img/Ellipse\ 13.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.client2{
+    background-image: url('../img/Ellipse\ 14.svg');
+}
+.client3{
+    background-image: url('../img/Ellipse\ 15.svg');
+}
+.client4{
+    background-image: url('../img/Ellipse\ 16.svg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client4 > p{
+    color: black;
+    font-size: 12px;
+    font-family: Lato;
+    font-weight: 400;
+}
+}
 
