@@ -2,6 +2,103 @@
     padding: 0;
     margin: 0;
 }
+.project_launchpad_1{
+    /* background-color: red; */
+    width: 100%;
+    height: 190px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    position: relative;
+}
+.empty_space{
+    /* background-color: gold; */
+    width: 100%;
+    height: 100%;
+}
+.launch_header{
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.launch_header_1{
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.launch_header_1 > h3{
+    color: #353636;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+.launch_header_1 > p{
+    color: #7B8179;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 400;
+}
+.launch_header_1 > p > span{
+    color: #1D1D1C;
+}
+.progress_bar{
+    /* background-color: purple; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.bar_1_1{
+    background-color: #FFFFFF;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 35%;
+}
+.bar_text{
+    /* background-color: red; */
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.bar_text > p{
+    color: #1D1D1C;
+    font-size: 10px;
+    font-family: Lato;
+    font-weight: 400;
+}
+.bar_text > p > span{
+    color: #585959;
+}
+.color_bar{
+    /* background-color: purple; */
+    width: 100%;
+    height: 15%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.orange_1{
+    background-color: #FF5F1F;
+    width: 100%;
+    height: 100%;
+}
+.white_1{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
 p.submit_work{
     color: #7B8179;
     font-size: 14px;
@@ -96,4 +193,145 @@ p.submit_work > span{
 }
 .large_file > p > span{
     color: #4353FF;
+}
+
+@media(max-width: 428px){
+.project_launchpad_1{
+    width: 100%;
+    height: 210px;
+    display: grid;
+    grid-template-columns: 0% 100% 0%;
+    position: relative;
+}
+.empty_space{
+    /* background-color: gold; */
+    width: 0%;
+    height: 0%;
+}
+.launch_header{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.launch_header_1{
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.launch_header_1 > h3{
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+.launch_header_1 > p{
+    color: #7B8179;
+    font-size: 12px;
+    font-family: Lato;
+    font-weight: 400;
+}
+.progress_bar{
+    /* background-color: purple; */
+    width: 0%;
+    height: 0%;
+}
+.bar_1_1{
+    width: 0px;
+    height: 0px;
+    bottom: 0%;
+}
+.bar_text{
+    /* background-color: red; */
+    width: 0%;
+    height: 0%;
+} 
+.bar_text > p{
+    font-size: 0px;
+    font-weight: 0;
+}
+.color_bar{
+    /* background-color: purple; */
+    width: 0%;
+    height: 0%;
+    display: grid;
+    grid-template-columns: 0% 0%;
+}
+.orange_1{
+    width: 0%;
+    height: 0%;
+}
+.white_1{
+    width: 0%;
+    height: 0%;
+}
+p.submit_work{
+    color: #7B8179;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 22px;
+}
+.submit_email{
+    /* background-color: yellow; */
+    width: 100%;
+    height: 400px;
+    margin-top: 5%;
+}
+.submit_email_1{
+    /* background-color: green; */
+    width: 95%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.email_submit{
+    width: 100%;
+    height: 100%;
+}
+.email_header{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email_header > h3{
+    color: #1D1D1C;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 600;
+
+}
+.email_texts{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.email_texts > p{
+    font-size: 12px;
+    text-align: center;
+}
+.large_file{
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+.large_file > h3{
+    font-size: 14px;
+}
+.large_file > p{
+    font-size: 12px;
+    text-align: center;
+}
 }

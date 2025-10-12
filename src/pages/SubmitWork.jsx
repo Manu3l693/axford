@@ -14,7 +14,7 @@ function SubmitWork() {
         <div className="launch_header">
             <div className="launch_header_1">
               <h3>Submit Your Work</h3>
-              <p className='submit_work'>Please fill out the form below to submit your work. Ensure all required fields are completed. For any issues or questions, feel free to contact us at <span>audit@group.com</span>. If you need to upload a large file, please use the optional link provided.</p>
+              <p className='submit_work_1'>Please fill out the form below to submit your work. Ensure all required fields are completed. For any issues or questions, feel free to contact us at <span>audit@group.com</span>. If you need to upload a large file, please use the optional link provided.</p>
             </div>
         </div>
         <div className="progress_bar">

@@ -41,7 +41,8 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin-right: 2%;
+    margin-right: 4%;
+    display: flex;
 }
 .axfordd_logo_dots > a{
     color: rgba(255, 255, 255, 0.98);
@@ -89,7 +90,7 @@
 }
 .axford_logo__linkss > ul > li{
     /* background-color: purple; */
-    width: 100%;
+    width: 100px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -242,6 +243,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 100%;
     z-index: -1;
     object-fit: cover;
     object-position: center;
@@ -874,14 +876,14 @@
 }
 .axford_dotss_1{
     background-color: #FF5F1F;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
-    margin-right: 3%;
+    margin-right: 5%;
 }
 .axfordd_logo_dots > a{
     color: rgba(255, 255, 255, 0.98);
-    font-size: 14px;
+    font-size: 12px;
     font-family: Montserrat;
     font-weight: 600;
     text-decoration: none;
@@ -899,7 +901,7 @@
     display: block;
     
 }
-.fa-bars, .fa-xmark{
+.white > .fa-bars, .fa-xmark{
     color: #fff;
     font-size: 15px;
     font-weight: 100px;
@@ -952,7 +954,18 @@
     position: relative;
     left: 0%;
 }
-
+.welcome-text > h1{
+    color: rgba(255, 255, 255, 0.98);
+    font-size: 30px;
+}
+.welcome-text > p{
+    font-size: 14px;
+}
+.welcome-text > button{
+    width: 179px;
+    height: 40px;
+    font-size: 14px;
+}
 .play-video{
     background-color: rgba(0,0,0,.5);
     width: 100%;
@@ -968,12 +981,13 @@
 }
 
 
+
 /*about-us*/
 
 .about-us{
     /* background-color: red; */
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: block;
     grid-template-columns: 0% 0%;
 }
@@ -1015,11 +1029,12 @@
     justify-content: center;
 }
 .about-text-content p{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /*out-founders-1*/
 .out-founders-1{
+    /* background-color: yellow; */
     width: 100%;
     height: 1600px;
     margin-top: 30%;
@@ -1030,7 +1045,7 @@
     margin-bottom: 1%;
 }
 .our-founder-texts > h2{
-    font-size: 25px;
+    font-size: 20px;
 }
 .our-founder-photo{
     width: 100%;
@@ -1057,7 +1072,7 @@
 
 .nam-occ-1 > h3{
     color: rgba(255, 255, 255, 0.98);
-    font-size: 20px;
+    font-size: 16px;
     font-family: Lato;
     font-weight: 500;
     word-wrap: break-word;
@@ -1066,7 +1081,7 @@
 }
 .nam-occ-1 > p{
     color: rgba(255, 255, 255, 0.61);
-    font-size: 16px;
+    font-size: 14px;
     font-family: Lato;
     font-weight: 500;
     word-wrap: break-word;
@@ -1083,18 +1098,21 @@
 }
 .started-header{
     /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 95%;
     margin: 0 0;
 }
 .started-header > h2{
-    font-size: 25px;
+    font-size: 20px;
 }
 .red-dot{
     width: 8px;
     height: 8px;
 }
 .new-hires > p{
-    font-size: 16px;
+    font-size: 14px;
 }
 .office_hour{
     /* background-color: blue; */
@@ -1131,7 +1149,7 @@
     border-bottom: 1px solid #A0A1A8;
 }
 .reg1-heading > h4, .reg2-heading > h4{
-    font-size: 20px;
+    font-size: 18px;
 }
 .reg1-text{
     width: 100%;
@@ -1140,7 +1158,7 @@
     align-items: normal;
 }
 .reg1-text > p{
-    font-size: 16px;
+    font-size: 14px;
 }
 .reg2{
     width: 100%;
@@ -1156,7 +1174,7 @@
     margin-top: 2%;
 }
 .reg2-text-list > ul > li > p{
-    font-size: 16px;
+    font-size: 14px;
 }
 .our_reg_2{
     /* background-color: green; */
@@ -1191,10 +1209,11 @@
     height: 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 5%;
 }
 .important_contact_texts > h2{
-    font-size: 25px;
+    font-size: 20px;
 }
 .important_people{
     width: 100%;
@@ -1227,10 +1246,10 @@
     flex: 1;
 }
 .important_details > h4{
-    font-size: 20px;
+    font-size: 18px;
 }
 .important_details > p{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
@@ -1242,39 +1261,42 @@
     margin-top: 30%;
 }
 .key_information_1{
+    /* background-color: blue; */
     width: 95%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 .key-info-text > h2{
-    font-size: 25px;
+    font-size: 20px;
 }
 .key-info-img{
+    /* background-color: green; */
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 .keycont-1{
+    /* background-color: yellow; */
     width: 100%;
     height: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .keyimg{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 .keyimg > img{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 .key_header > h3{
-    font-size: 20px;
+    font-size: 18px;
 }
 .key_content-text > p{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
@@ -1295,7 +1317,7 @@
     justify-content: space-around;
 }
 .what_they_say > h2{
-    font-size: 25px;
+    font-size: 20px;
 }
 .what-text{
     width: 100%;
@@ -1305,7 +1327,7 @@
     justify-content: center;
 }
 .what-text > p{
-    font-size: 16px;
+    font-size: 14px;
 }
 .quotations{
     width: 100%;
@@ -1323,18 +1345,18 @@
     justify-content: center;
 }
 .quote-text > p{
-    font-size: 16px;
+    font-size: 14px;
 }
 .quote_headers{
     width: 200px;
     height: 60px;
 }
 .quote_headers > h4{
-    font-size: 18px;
+    font-size: 16px;
 }
 .quote_headers > p{
     color: #7B8179;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Lato;
     font-weight: 400;
 }
@@ -1349,8 +1371,8 @@
 .client1, .client2, .client3, .client4{
     /* background-color: red; */
     background-image: url('../img/Ellipse\ 13.svg');
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .client2{
     background-image: url('../img/Ellipse\ 14.svg');

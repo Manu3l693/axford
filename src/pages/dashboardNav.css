@@ -8,7 +8,7 @@
     height: 50px;
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 100;
 }
 .navbar_1{
     background-color: #fff;
@@ -25,7 +25,7 @@
     width: 90%;
     height: 100%;
     display: grid;
-    grid-template-columns: 50% 30% 20%;
+    grid-template-columns: 45% 30% 25%;
 }
 .logo1{
     /* background-color: blue; */
@@ -61,7 +61,11 @@
     height: 20px;
     position: relative;
 }
-.icon-images > img{
+.icon-images > a{
+    width: 100%;
+    height: 100%;
+}
+.icon-images > a > img{
     width: 20px;
     height: 20px;
     object-fit: cover;
@@ -250,4 +254,129 @@
     font-family: Lato;
     font-weight: 400;
     margin: 0 3%;
+}
+
+@media(max-width: 428px){
+.navbar_111{
+    height: 60px;
+}
+.navbar_1{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.navbar_11{
+    width: 95%;
+    grid-template-columns: 30% 50% 20%;
+}
+.axford_dot{
+    width: 5px;
+    height: 5px;
+    margin: 0 0%;
+    margin-right: 5%;
+}
+.logo1 > h3{
+    font-size: 12px;
+}
+.icons{
+    height: 100%;
+}
+.icon-images{
+    width: 14px;
+    height: 14px;
+    position: relative;
+}
+.icon-images > a{
+    width: 100%;
+    height: 100%;
+}
+.icon-images > a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.auditor{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.auditor > button{
+    background-color: #EDF2FE;
+    width: 0px;
+    height: 0px;
+    right: 0%;
+}
+.auditor > button > p{
+    font-size: 0px;
+    font-weight: 0;
+}
+.junior_image{
+    width: 20px;
+    height: 20px;
+}
+.junior_image > img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.showNotis{
+    background-color: #fff;
+    width: 95%;
+    height: 600px;
+}
+.hidden{
+    display: none;
+}
+.show_notis_text > h3{
+    font-size: 14px;
+}
+
+.show_notis_text > p{
+    font-size: 11px;
+}
+.notis_1{
+    width: 95%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 13% 87%;
+}
+.notis_1_img{
+    width: 100%;
+    height: 100%;
+}
+.notis_img{
+    width: 35px;
+    height: 35px;
+}
+.notis_img > img{
+    width: 17.5px;
+    height: 17.5px;
+}
+.notis_1_texts{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+.notis_header{
+    width: 100%;
+    height: 80%;
+}
+.notis_header > h3{
+    color: #1D1D1C;
+    font-size: 13px;
+    font-family: Lato;
+    font-weight: 500;
+}
+.notis_header > p{
+    color: #585959;
+    font-size: 11px;
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 20px;
+}
+
 }

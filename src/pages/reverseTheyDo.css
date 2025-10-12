@@ -3,7 +3,6 @@
     margin: 0;
 }
 .people_content_box1{
-   /* background-color: purple; */
     width: 100%;
     height: 600px; 
     display: flex;
@@ -19,4 +18,26 @@
     justify-content: space-between;
     position: absolute;
     top: 5%;
+}
+
+
+@media (max-width: 428px){
+.people_content_box1{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 5%;
+}
+.people_content_11{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 5%;
+}
+
 }

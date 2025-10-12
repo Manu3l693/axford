@@ -72,7 +72,7 @@ export default function ExplorePage(){
                         </div>
 
                         <div className="axford_button_1">
-                            <div className="axford_butons_1"  onClick={changeThing}>
+                            <div className="axford_butons_1  white"  onClick={changeThing}>
                                 <i class={click ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
                             </div>
                         </div>

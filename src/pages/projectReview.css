@@ -134,3 +134,69 @@
     font-size: 14px;
     font-family: Lato; 
 }
+
+@media(max-width: 428px){
+.employee{
+    width: 100%;
+    height: 120px;
+}
+.overview{
+    width: 95%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+}
+.overview_header{
+    align-items: center;
+    text-align: center;
+}
+.overview_header > h3{
+    font-size: 12px;
+}
+.overview_texts > p{
+    font-size: 10px;
+}
+.about_11{
+    width: 100%;
+    height: 1000px;
+}
+.about_text{
+    width: 95%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.about_text_1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.about_header > h3{
+    font-size: 12px;
+}
+.about_txt1{
+    width: 100%;
+    flex: 1;
+}
+.about_txt_1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.txt_content_1{
+    align-items: normal;
+    margin-bottom: 20%;
+}
+.txt_content_1 > p{
+    margin-top: 5%;
+    font-size: 10px;
+}
+.about_client_others_link{
+    right: 0%;
+}
+
+.about_client_others_link > ul > li > a{
+    font-size: 10px;
+}
+}

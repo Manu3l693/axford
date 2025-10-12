@@ -34,9 +34,10 @@
 }
 .launch_header > p{
     color: #7B8179;
-    font-size: 14px;
+    font-size: 13px;
     font-family: Lato;
     font-weight: 400;
+    text-align: center;
 }
 .launch_header > p > span{
     color: #1D1D1C;
@@ -123,4 +124,84 @@
     font-size: 15px;
     font-family: Lato;
     font-weight: 400;
+}
+
+
+@media(max-width: 428px){
+.project_launchpad{
+    width: 100%;
+    height: 135px;
+    display: grid;
+    grid-template-columns: 0% 100% 0%;
+}
+.empty_space{
+    width: 0%;
+    height: 0%;
+}
+.launch_header{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    margin: 0 auto;
+}
+.launch_header > h3{
+    color: #353636;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+.launch_header > p{
+    font-size: 10px;
+    text-align: center;
+}
+.progress_bar{
+    width: 0%;
+    height: 0%;
+}
+.bar_1{
+    width: 0px;
+    height: 0px;
+    bottom: 0%;
+}
+.bar_text{
+    width: 0%;
+    height: 0%;
+} 
+.bar_text > p{
+    font-size: 0px;
+    font-weight: 0;
+}
+.color_bar{
+    width: 0%;
+    height: 0%;
+    grid-template-columns: 0% 0%;
+}
+.orange_1{
+    width: 0%;
+    height: 0%;
+}
+.white_1{
+    width: 0%;
+    height: 0%;
+}
+.project_nav{
+    width: 100%;
+    height: 65px;
+}
+.project_nav ul{
+    width: 100%;
+    height: 100%;
+}
+.project_nav ul li {
+    width: 100%;
+    height: 100%;
+}
+.project_nav ul li a{
+    font-size: 9px;
+}
 }

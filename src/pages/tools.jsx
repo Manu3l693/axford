@@ -90,17 +90,17 @@ function Tools(props) {
                 </div>
             </div>
 
-            <div className="tools_1">
-                <div className="tool-img">
-                    <img src={img5} alt="tool_img" />
+            <div className="tools_1_1">
+                <div className="tool-img-1">
+                    <img src={img5} alt="tool_img_1" />
                 </div>
 
-                <div className="tool_text">
+                <div className="tool_text_1">
                     <h3>{h5}</h3>
                     <p>{p5}</p>
                 </div>
 
-                <div className="tool_button">
+                <div className="tool_button_1">
                     <button><Link>{l5}</Link></button>
                 </div>
             </div>

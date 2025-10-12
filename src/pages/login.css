@@ -184,6 +184,13 @@ form.login_border_1{
 }
 
 @media (max-width:428px){
+.red_dot{
+    background-color: #FF5F1F;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 2%;
+}
 .login_border{
     width: 95%;
 }
@@ -202,7 +209,7 @@ form.login_border_1{
     font-size: 14px;
 }
 .login_border_texts > h3{
-    font-size: 18px;
+    font-size: 16px;
 }
 .login_des{
     width: 95%;
@@ -212,14 +219,14 @@ form.login_border_1{
     justify-content: center;
 }
 .login_des > p{
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .form-groups > label{
-    font-size: 13px;
+    font-size: 12px;
 }
 .login_button > button{
-    font-size: 14px;
+    font-size: 12px;
     
 }
 .login_button > button:hover{
@@ -229,6 +236,6 @@ form.login_border_1{
     text-decoration: none;
     color: blue;
     font-family: lato;
-    font-size: 14px;
+    font-size: 12px;
 }
 }

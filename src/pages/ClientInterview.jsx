@@ -24,6 +24,7 @@ function ClientInterview() {
 
         <div className="preparation">
           <div className="preparation_1">
+
              <div className="analysis_1">
                <div className="analysis_header_1">
                 <h4>1. Preparation</h4>
@@ -71,6 +72,7 @@ function ClientInterview() {
                  </div>
                </div>
              </div>
+             
           </div>
 
         <DashFooter />

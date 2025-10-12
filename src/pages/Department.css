@@ -24,6 +24,15 @@
 .axford_logo__linkss > ul > li > a.black_links{
     color: #000;
 }
+.fa-bars, .fa-xmark{
+    color: #000;
+    font-size: 15px;
+    font-weight: 100px;
+    display: flex;
+    justify-self: center;
+    position: absolute;
+    top: 25%;
+}
 /* blank_space */
 
 .blank_space{

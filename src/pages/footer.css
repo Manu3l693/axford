@@ -261,10 +261,13 @@ footer{
     height: 25px;
 }
 .contact-header > h3{
-    font-size: 16px;
+    font-size: 14px;
 }
 .phone > p, .email > p{
-    font-size: 14.5px;
+    font-size: 14px;
+}
+.head-office > p{
+    font-size: 12px;
 }
 .quick-links{
     width: 0px;
@@ -298,9 +301,15 @@ footer{
     align-items: center;
     justify-content: center;
 }
+.follow-head > h3{
+    font-size: 14px;
+}
 .follow_link ul{
-    background-color: #fff;
+    /* background-color: #fff; */
     align-items: center;
+}
+.follow_link ul li a{
+    font-size: 12px;
 }
 
 .legal{
