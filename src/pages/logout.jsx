@@ -46,7 +46,8 @@ function LogOut() {
             <h2>Axford & Co.</h2>
         </div>
 
-        <div className="log_out">
+        <div className="log_out_prompt">
+          <div className="log_out">
           <div className="warning_text">
             <h2>Log out?</h2>
           </div>
@@ -57,6 +58,7 @@ function LogOut() {
               <button type="button" onClick={navigating}>No</button>
             </div>
           </form>
+        </div>
         </div>
       </div>
     </div>

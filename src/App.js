@@ -16,6 +16,7 @@ import ClientInterview from "./pages/ClientInterview";
 import Independent from "./pages/independent";
 import Resources from "./pages/Resources";
 import SubmitWork from "./pages/SubmitWork";
+import NotFound from "./pages/notFound";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="/login" element={<Login />}></Route>
             <Route path="/forgot" element={<Forgotpassword/>}></Route>
             <Route path="/logout" element={<LogOut/>}></Route>
+            <Route path="*" element={<NotFound/>}></Route>
           </Routes>
        </BrowserRouter>
 
