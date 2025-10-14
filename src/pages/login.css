@@ -184,10 +184,13 @@ form.login_border_1{
 }
 
 @media (max-width:428px){
+.axford_logo > h2{
+    font-size: 12px;
+}
 .red_dot{
     background-color: #FF5F1F;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     margin-right: 2%;
 }
