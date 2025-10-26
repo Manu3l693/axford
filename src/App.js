@@ -1,4 +1,4 @@
-import{BrowserRouter, Routes, Route} from 'react-router-dom';
+import{HashRouter as Router, Routes, Route} from 'react-router-dom';
 import './pages/Home.css';
 import './pages/Explore.css'
 import ProjectReview from "./pages/projectReview";
@@ -21,7 +21,7 @@ import ProtectedRoutes from "./pages/protectedRoutes";
 function App() {
   return (
       <>
-       <BrowserRouter>
+       <Router>
           <Routes>
             <Route path="/" element={<LandingPage />}></Route>
             
@@ -43,7 +43,7 @@ function App() {
             <Route path="/logout" element={<LogOut/>}></Route>
             <Route path="*" element={<NotFound/>}></Route>
           </Routes>
-       </BrowserRouter>
+       </Router>
 
        
       </>
