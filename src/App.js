@@ -1,7 +1,6 @@
-import React from "react";
+import{BrowserRouter, Routes, Route} from 'react-router-dom';
 import './pages/Home.css';
 import './pages/Explore.css'
-import{BrowserRouter, Routes, Route} from 'react-router-dom';
 import ProjectReview from "./pages/projectReview";
 import LandingPage from "./pages/Home";
 import ExplorePage from "./pages/Explore";
@@ -17,6 +16,7 @@ import Independent from "./pages/independent";
 import Resources from "./pages/Resources";
 import SubmitWork from "./pages/SubmitWork";
 import NotFound from "./pages/notFound";
+import ProtectedRoutes from "./pages/protectedRoutes";
 
 function App() {
   return (
@@ -24,15 +24,19 @@ function App() {
        <BrowserRouter>
           <Routes>
             <Route path="/" element={<LandingPage />}></Route>
-            <Route path="/Explore" element={<ExplorePage />}></Route>
-            <Route path="/Department" element={<Department />}></Route>
-            <Route path="/Dashboard" element={<Dashboard />}></Route>
-            <Route path="/projectreview" element={<ProjectReview/>}></Route>
-            <Route path="control" element={<ControlAccess />}></Route>
-            <Route path="/client" element={<ClientInterview />}></Route>
-            <Route path="/independent" element={<Independent />}></Route>
-            <Route path="/resources" element={<Resources/>}></Route>
-            <Route path="/submitwork" element={<SubmitWork/>}></Route>
+            
+            <Route element={<ProtectedRoutes />}>
+              <Route path="/Explore" element={<ExplorePage />}></Route>
+              <Route path="/Department" element={<Department />}></Route>
+              <Route path="/Dashboard" element={<Dashboard />}></Route>
+              <Route path="/projectreview" element={<ProjectReview/>}></Route>
+              <Route path="control" element={<ControlAccess />}></Route>
+              <Route path="/client" element={<ClientInterview />}></Route>
+              <Route path="/independent" element={<Independent />}></Route>
+              <Route path="/resources" element={<Resources/>}></Route>
+              <Route path="/submitwork" element={<SubmitWork/>}></Route>
+            </Route>
+
             <Route path="/signup" element={<Signup />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/forgot" element={<Forgotpassword/>}></Route>

@@ -1,4 +1,3 @@
-import {React} from 'react';
 import './logout.css'
 import {useNavigate} from 'react-router-dom'
 
@@ -18,7 +17,6 @@ function LogOut() {
 
         if(result.success){
             alert(result.message)
-
             window.location.href = '/'
         } else{
             alert(result.error)

@@ -1,6 +1,6 @@
 import './login.css';
 import {Link, useNavigate} from 'react-router-dom';
-import {React, useState} from 'react';
+import {useState} from 'react';
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -29,10 +29,15 @@ function Login() {
       
       if(result.error){
         setErrorMessage(result.error.join(" "));
+        const notAuth = result.notLoggedIn
+        console.log(notAuth);
+        localStorage.setItem('notAuth', notAuth)
       } else{
         setMessage(result.message);
+        const auth = result.auth
+        console.log(auth);
+        localStorage.setItem('auth', auth)
         localStorage.setItem('user', result.name)
-        localStorage.setItem('authCheck', true)
         setTimeout(() => {
           navigate('/Explore');
         }, 1000);
