@@ -16,7 +16,7 @@ import Independent from "./pages/independent";
 import Resources from "./pages/Resources";
 import SubmitWork from "./pages/SubmitWork";
 import NotFound from "./pages/notFound";
-import ProtectedRoutes from "./pages/protectedRoutes";
+// import ProtectedRoutes from "./pages/protectedRoutes";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />}></Route>
             
-            <Route element={<ProtectedRoutes />}>
+            {/* <Route element={<ProtectedRoutes />}> */}
               <Route path="/Explore" element={<ExplorePage />}></Route>
               <Route path="/Department" element={<Department />}></Route>
               <Route path="/Dashboard" element={<Dashboard />}></Route>
@@ -35,7 +35,7 @@ function App() {
               <Route path="/independent" element={<Independent />}></Route>
               <Route path="/resources" element={<Resources/>}></Route>
               <Route path="/submitwork" element={<SubmitWork/>}></Route>
-            </Route>
+            {/* </Route> */}
 
             <Route path="/signup" element={<Signup />}></Route>
             <Route path="/login" element={<Login />}></Route>
